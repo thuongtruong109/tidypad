@@ -5,7 +5,6 @@ on:
   push:
     branches:
       - main
-      - develop
 
 jobs:
   build:
@@ -18,7 +17,7 @@ jobs:
           fetch-depth: 0
 
       - name: Setup pnpm
-        uses: pnpm/action-setup@v2
+        uses: npm/action-setup@v2
         with:
           version: 9
 
@@ -26,19 +25,19 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 18
-          cache: pnpm
+          cache: npm
 
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+        run: npm install --frozen-lockfile
 
       - name: Run Biome Lint
-        run: pnpm lint
+        run: npm run lint
 
       - name: Run Biome Format Check
-        run: pnpm format
+        run: npm run format
 
       - name: Type Check
-        run: pnpm typecheck
+        run: npm run typecheck
 
       - name: Check Commit Messages
         run: pnpm exec commitlint --from=HEAD~1 --to=HEAD

@@ -1,3 +1,5 @@
+<!-- https://github.dev/supabase/supabase/tree/master/examples/user-management/nextjs-user-management -->
+
 <p align="center">
 	<img alt="Minimil Logo" src=".github/assets/logo.png" width="90">
 	<h4 align="center">Minimil</h4>
@@ -39,12 +41,12 @@
   <h4>Features</h4>
 </div>
 
-**Clean structure** – easy to extend and scale  
-**Blazing fast** – optimized build and dev performance  
-**Tailwind CSS & animation ready** – with `tailwindcss-animate` and `framer-motion`  
-**Dark & light mode** – powered by `next-themes`  
-**PWA support** – via [`@serwist/next`](https://www.npmjs.com/package/@serwist/next)  
-**Developer-friendly** – commit linting, formatting, and type checking baked in  
+**Clean structure** – easy to extend and scale
+**Blazing fast** – optimized build and dev performance
+**Tailwind CSS & animation ready** – with `tailwindcss-animate` and `framer-motion`
+**Dark & light mode** – powered by `next-themes`
+**PWA support** – via [`@serwist/next`](https://www.npmjs.com/package/@serwist/next)
+**Developer-friendly** – commit linting, formatting, and type checking baked in
 **Strict code quality** – powered by [`biome`](https://biomejs.dev/)
 
 <p align="center">
@@ -73,7 +75,7 @@
 ├── biome.json          # BiomeJS config
 ├── tailwind.config.ts  # TailwindCSS config
 ├── postcss.config.js
-└── README.md           
+└── README.md
 ```
 
 <p align="center">

@@ -30,7 +30,7 @@ export const ThemeSwitcher = () => {
   ];
 
   return (
-    <span className="flex w-fit items-center gap-0.5 overflow-hidden rounded-[6px] bg-primary/5 p-[2px]">
+    <div className="flex w-fit items-center gap-0.5 overflow-hidden rounded-[6px] bg-primary/5 p-[2px]">
       {buttons.map(({ label, icon, active }) => (
         <button
           type="button"
@@ -44,7 +44,7 @@ export const ThemeSwitcher = () => {
           {icon}
         </button>
       ))}
-    </span>
+    </div>
   );
 };
 
