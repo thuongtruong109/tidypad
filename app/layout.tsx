@@ -1,7 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 
-import { ThemeProvider } from "@/components/theme";
+import { ThemeProvider } from "@/app/_components/theme";
 import { Analytics } from "@vercel/analytics/react";
 
 import { OpenGraph } from "@/lib/og";

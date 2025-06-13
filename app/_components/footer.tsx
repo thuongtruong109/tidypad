@@ -1,5 +1,5 @@
-import Link from "@/components/link";
-import { ThemeSwitcher } from "@/components/theme";
+import Link from "@/app/_components/link";
+import { ThemeSwitcher } from "@/app/_components/theme";
 
 const Footer = () => {
   return (

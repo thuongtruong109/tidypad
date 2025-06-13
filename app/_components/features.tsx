@@ -2,8 +2,8 @@
 
 import type * as React from "react";
 
-import { Alert, AlertDescription, AlertTitle } from "@/ui/alert";
 import { CircleIcon, Lightbulb } from "lucide-react";
+import { Alert, AlertDescription, AlertTitle } from "../../components/ui/alert";
 
 const features: FeatureItemData[] = [
   {

@@ -1,9 +1,9 @@
 "use client";
 
-import { FeatureListSection } from "@/components/features";
-import { Footer } from "@/components/footer";
-import Logo from "@/components/logo";
-import * as FadeIn from "@/motion/fade";
+import { FeatureListSection } from "@/app/_components/features";
+import { Footer } from "@/app/_components/footer";
+import Logo from "@/app/_components/logo";
+import * as FadeIn from "@/components/motion/fade";
 import { Sparkles, UserRound } from "lucide-react";
 import { useRouter } from "next/navigation";
 

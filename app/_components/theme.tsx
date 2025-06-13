@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 
 import { ThemeProvider as NextThemeProvider, useTheme } from "next-themes";
 
-import { cn } from "@/lib/utils";
+import { cn } from "../../lib/utils";
 
 import { Monitor, Moon, Sun } from "lucide-react";
 
