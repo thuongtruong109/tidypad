@@ -4,7 +4,10 @@
   "private": true,
   "description": "Snap your mind instantly",
   "author": "thuongtruong109",
-  "keywords": ["nextjs", "react"],
+  "keywords": [
+    "nextjs",
+    "react"
+  ],
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -23,6 +26,8 @@
     "@biomejs/biome": "^1.9.4",
     "@radix-ui/react-slot": "^1.1.2",
     "@serwist/next": "^9.0.13",
+    "@supabase/ssr": "^0.6.1",
+    "@supabase/supabase-js": "^2.49.4",
     "@vercel/analytics": "^1.5.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
@@ -57,8 +62,12 @@
     }
   },
   "lint-staged": {
-    "*.{ts,tsx,js,jsx}": ["biome lint --apply ."],
-    "*.{json,css,html,md}": ["biome format --write ."]
+    "*.{ts,tsx,js,jsx}": [
+      "biome lint --apply ."
+    ],
+    "*.{json,css,html,md}": [
+      "biome format --write ."
+    ]
   },
   "config": {
     "commitizen": {
