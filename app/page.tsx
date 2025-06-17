@@ -4,15 +4,11 @@ import { FeatureListSection } from "@/components/features";
 import { Footer } from "@/components/footer";
 import Logo from "@/components/logo";
 import * as FadeIn from "@/motion/fade";
-import { Sparkles, UserRound } from "lucide-react";
-import { useRouter } from "next/navigation";
+import { GitBranch, Sparkles, UserRound } from "lucide-react";
+import Link from "next/link";
+import { Button } from "./ui/button";
 
 export default function Home() {
-  const router = useRouter();
-  const handleStartWriting = () => {
-    router.push("/all");
-  };
-
   return (
     <FadeIn.Container className="mx-auto flex max-w-screen-sm flex-col space-y-6 px-4 py-8 md:px-6 md:py-12 lg:py-24">
       <FadeIn.Item>
@@ -35,16 +31,31 @@ export default function Home() {
         </p>
       </FadeIn.Item>
 
-      <FadeIn.Item>
-        <button
-          type="button"
-          aria-label="started"
-          onClick={handleStartWriting}
-          className="flex items-center space-x-1 justify-self-center rounded-sm bg-black px-2 py-1 font-medium text-sm text-white transition-all hover:opacity-80"
-        >
-          <Sparkles width={16} />
-          <span>Start writing</span>
-        </button>
+      <h1 className="max-w-3xl font-serif text-4xl tracking-tight md:text-5xl">
+        A clean space to write your thoughts.
+      </h1>
+      <p className="max-w-xl text-pretty text-base text-muted-foreground md:text-lg">
+        Minimal app for writing notes, thoughts, and ideas — no distractions,
+        just writing.
+      </p>
+
+      <FadeIn.Item className="flex justify-center gap-3">
+        <Button className="px-6" asChild>
+          <Link href="/all">
+            <Sparkles width={16} />
+            <span>Start writing</span>
+          </Link>
+        </Button>
+        <Button variant="outline" className="px-6" asChild>
+          <Link
+            href="https://github.com/tanlucvn/miniwrit"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <GitBranch width={16} />
+            <span>GitHub</span>
+          </Link>
+        </Button>
       </FadeIn.Item>
 
       <FadeIn.Item>
